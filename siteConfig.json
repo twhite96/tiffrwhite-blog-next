@@ -1,0 +1,16 @@
+{
+  "SITE_LANG": "en",
+  "AUTHOR_NAME": "tiff",
+  "AUTHOR_EMAIL": "tiffany@tiffanywhite.dev",
+  "AUTHOR_MASTODON": "tiff",
+  "AUTHOR_GITHUB": "twhite96",
+  "SITE_TITLE": "Tiffany White's Blog",
+  "SITE_DESC": "Tiffany White's blog and personal website. Software engineer, writer, home lab nerd.",
+  "SITE_URL": "https://tiffanywhite.dev",
+  "REPO_URL": "https://github.com/twhite96/fork.healeycodes.com",
+  "EDIT_POST_URL": "https://github.com/twhite96/fork.healeycodes.com/tree/main/posts",
+  "BUTTON_DOWN_USER": "tiffanywhite",
+  "LAYOUT_WIDTH": 725,
+  "MASTODON_INSTANCE": "https://hachyderm.io",
+  "GITHUB_USERNAME": "twhite96"
+}

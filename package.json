@@ -1,0 +1,30 @@
+{
+  "name": "tiffany-r-white-blog",
+  "version": "1.0.0",
+  "description": "my open source Next.js blog",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "author": "tiff",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "gray-matter": "^4.0.3",
+    "image-size": "^1.0.2",
+    "littlefoot": "4.0.0-9",
+    "next": "^13.4.3",
+    "next-plausible": "^3.7.2",
+    "nextra": "^2.6.0",
+    "nextra-theme-blog": "^2.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.3",
+    "@types/react": "18.2.6",
+    "typescript": "5.0.4"
+  }
+}
