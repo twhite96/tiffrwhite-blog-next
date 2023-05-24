@@ -11,6 +11,5 @@
   "EDIT_POST_URL": "https://github.com/twhite96/fork.healeycodes.com/tree/main/posts",
   "BUTTON_DOWN_USER": "tiffanywhite",
   "LAYOUT_WIDTH": 725,
-  "MASTODON_INSTANCE": "https://hachyderm.io",
-  "GITHUB_USERNAME": "twhite96"
+  "MASTODON_INSTANCE": "https://hachyderm.io"
 }
