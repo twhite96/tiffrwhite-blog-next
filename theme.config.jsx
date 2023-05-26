@@ -14,12 +14,16 @@ export default {
   darkMode: false,
   navs: [
     {
-      url: "https://github.com/twhite96",
-      name: "GitHub",
+      url: "/index",
+      name: "Me",
     },
     {
       url: "/projects",
       name: "Projects",
+    },
+    {
+      url: "https://github.com/twhite96",
+      name: "GitHub",
     },
     {
       url: "https://notes.tiffanywhite.dev",
