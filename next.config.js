@@ -4,9 +4,7 @@ const withNextra = require('nextra')({
 })
  
 
-const { littlefoot } = require("littlefoot")({
-  activateOnHover: false,
-})
+const { littlefoot } = require("littlefoot");
 
 // module.exports = littlefoot()
 module.exports = withNextra({
