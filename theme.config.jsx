@@ -22,7 +22,7 @@ export default {
       name: "GitHub",
     },
     {
-      url: "https://notes.tiffwhite.dev",
+      url: "https://notes.tiffanywhite.dev",
       name: "Notes",
     },
     {
