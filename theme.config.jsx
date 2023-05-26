@@ -13,10 +13,10 @@ export default {
   postFooter: null,
   darkMode: false,
   navs: [
-    {
-      url: "/projects",
-      name: "Projects",
-    },
+    // {
+    //   url: "/projects",
+    //   name: "Projects",
+    // },
     {
       url: "https://github.com/twhite96",
       name: "GitHub",
