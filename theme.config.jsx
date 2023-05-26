@@ -26,7 +26,7 @@ export default {
       name: "Notes",
     },
     {
-      url: "https://links.tiffwhite.dev",
+      url: "https://links.tiffanywhite.dev",
       name: "My stuff",
     },
   ],
