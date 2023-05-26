@@ -14,8 +14,20 @@ export default {
   darkMode: false,
   navs: [
     {
+      url: "/projects",
+      name: "Projects",
+    },
+    {
       url: "https://github.com/twhite96",
       name: "GitHub",
+    },
+    {
+      url: "https://notes.tiffwhite.dev",
+      name: "Notes",
+    },
+    {
+      url: "https://links.tiffwhite.dev",
+      name: "My stuff",
     },
   ],
 };
