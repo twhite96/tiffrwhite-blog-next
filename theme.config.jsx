@@ -15,19 +15,11 @@ export default {
     </>
   ),
   readMore: "Read More →",
-  postFooter: null,
   darkMode: true,
   search: true,
   primaryHue: 197,
+  // editText: "Edit this page on GitHub",
   navs: [
-    {
-      url: "/index",
-      name: "Me",
-    },
-    {
-      url: "/projects",
-      name: "Projects",
-    },
     {
       url: "https://github.com/twhite96",
       name: "GitHub",
@@ -41,5 +33,4 @@ export default {
       name: "My stuff",
     },
   ],
-  logo: "https://res.cloudinary.com/twhiteblog/image/upload/v1685138249/favicon_zvkwc8.svg",
 };

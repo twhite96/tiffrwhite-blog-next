@@ -1,6 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -29,9 +30,17 @@ class MyDocument extends Document {
           <meta name='twitter:title' content={meta.title} />
           <meta name='twitter:description' content={meta.description} />
           <meta name='twitter:image' content={meta.image} />
+          <link
+            rel='stylesheet'
+            href='https://unpkg.com/littlefoot/dist/littlefoot.css'
+          />
+          <script
+            src='https://unpkg.com/littlefoot/dist/littlefoot.js'
+            type='application/javascript'
+          ></script>
+          <script>littlefoot.littlefoot()</script>
         </Head>
         <body>
-
           <Main />
           <NextScript />
         </body>

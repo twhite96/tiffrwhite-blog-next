@@ -1,5 +1,7 @@
 import siteConfig from "../siteConfig.json";
 
+
+
 export default function Newsletter() {
   const after = () =>
     window.open(
@@ -7,31 +9,25 @@ export default function Newsletter() {
       "popupwindow"
     );
   return (
-    <div className="newsletter-section">
-      <p className="newsletter-desc">
-        Subscribe to my new posts (about once a month).
-      </p>
+    <div className="newsletter">
       <form
         action={`https://buttondown.email/api/emails/embed-subscribe/${siteConfig.BUTTON_DOWN_USER}`}
-        method="post"
-        target="popupwindow"
+        method='post'
+        target='popupwindow'
         onSubmit={after}
-        className="embeddable-buttondown-form"
+        className='embeddable-buttondown-form'
       >
-        <div className="control">
-          <input
-            required
-            className="email"
-            placeholder="adalovelace@gmail.com"
-            type="email"
-            name="email"
-            id="bd-email"
-          />
-          <input type="hidden" value="1" name="embed" />
-          <input className="subscribe" type="submit" value="Subscribe" />
-        </div>
+        <label htmlFor='bd-email'>Enter your email</label>
+        <input type='email' name='email' id='bd-email' />
+        <input type='submit' value='Subscribe' />
+        {/* <p>
+          <a href='https://buttondown.email/refer/tiffanywhite' target='_blank'>
+            Powered by Buttondown.
+          </a>
+        </p> */}
       </form>
-      <style jsx>{`
+      
+      {/* <style jsx>{`
         .newsletter-section {
           margin-top: 20px;
           padding-left: 16px;
@@ -90,7 +86,7 @@ export default function Newsletter() {
             width: 100%;
           }
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }
