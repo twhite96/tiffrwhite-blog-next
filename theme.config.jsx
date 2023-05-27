@@ -12,6 +12,7 @@ export default {
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
+      <link rel="favicon" href="/favicon.svg" />
     </>
   ),
   readMore: "Read More →",
