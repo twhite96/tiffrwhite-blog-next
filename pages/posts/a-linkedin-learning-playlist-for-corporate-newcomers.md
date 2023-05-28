@@ -1,8 +1,12 @@
 ---
-title: "A LinkedIn Learning Playlist for Corporate Newcomers"
+title: A LinkedIn Learning Playlist for Corporate Newcomers
 layout: post
-tags: [LinkedIn, LinkedIn Learning, corporate]
-image: https://res.cloudinary.com/twhiteblog/image/upload/v1575848806/corporate.jpg
+tags:
+  - LinkedIn
+  - LinkedIn Learning
+  - corporate
+description: If you’re over 30 and have just made your way up from some place like Target as a cashier to having a nice, cushy dev job in a corporation
+date: 2019-12-09
 ---
 
 If you're over 30 and have just made your way up from some place like Target as a cashier to having a nice, cushy dev job in a corporation, it can seem really daunting at first. I was out of my element for a good portion of the past 5 months.

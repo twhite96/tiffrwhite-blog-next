@@ -1,9 +1,8 @@
 ---
-ID: 2631
-title: 'Update: Lots of Things Happening'
-# update-things-happening
-author: Tiffany White
+title: "Update: Lots of Things Happening"
+description: I thought I’d post a short update about why I haven’t been blogging as much.
 date: 2017-11-06
+tags: "meta"
 ---
 
 

@@ -74,6 +74,13 @@ li {
   line-height: 25px;
 }
 
+.nx-prose :where(code):not(:where([class~=nx-not-prose] *)) {
+  background: #F9F9F9;
+  border-radius: .3em;
+  color: #BF616A;
+  font-weight: 600;
+}
+
 blockquote {
   color: var(--light-text);
   margin-right: 0px;

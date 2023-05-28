@@ -1,10 +1,8 @@
 ---
-title: "New Opportunities"
-layout: post
-tags: [new job, long wait]
-image: https://res.cloudinary.com/twhiteblog/image/upload/v1628932459/vue.js.webp
+title: New Opportunities
+tags: meta
 description: Sometimes, you just get lucky. Again.
-excerpt: Sometimes, you just get lucky. Again.
+date: 2021-09-10
 ---
 
 {% notice warning %}
