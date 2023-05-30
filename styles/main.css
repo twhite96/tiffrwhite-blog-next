@@ -85,7 +85,7 @@ li {
   font-weight: 600;
 }
 
-blockquote {
+.prose blockquote {
   color: var(--light-text);
   margin-right: 0px;
   border-left-color: var(--quote-left-border);
@@ -95,7 +95,7 @@ blockquote {
   box-shadow: 0px 5px 24px -16px rgba(0, 0, 0, 0.1);
 }
 
-blockquote>p {
+.prose blockquote>p {
   color: var(--light-text);
   padding-left: 1rem;
 }
