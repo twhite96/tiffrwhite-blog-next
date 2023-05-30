@@ -9,6 +9,7 @@
   --button-text: #fff;
   --aside: #d7d5ce;
   --link-visited: #af52de;
+  --quote-left-border: #0178ff;
 }
 
 a {
@@ -87,7 +88,7 @@ li {
 blockquote {
   color: var(--light-text);
   margin-right: 0px;
-  border-left-color: var(--border);
+  border-left-color: var(--quote-left-border);
   border-left-style: solid;
   border-left-width: 2px;
   padding: 1%;
