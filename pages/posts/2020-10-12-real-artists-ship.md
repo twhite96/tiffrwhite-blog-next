@@ -1,9 +1,8 @@
 ---
 title: "Real Artists Ship: Portfolio Finished"
-layout: post
-tags: [portfolio, gatsby.js, ship it]
-image: https://res.cloudinary.com/twhiteblog/image/upload/v1602538757/portfolio_vq0kye.jpg
+tags: meta
 description: Real artists ship so that's what I vow to do from here on in.
+date: 2020-10-11
 ---
 
 Real artists ship so that's what I vow to do from here on in.

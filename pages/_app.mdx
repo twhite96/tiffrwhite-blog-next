@@ -1,16 +1,24 @@
 import React from "react";
+import Head from 'next/head'
 import "nextra-theme-blog/style.css";
-import "../components/nav.css";
 import PlausibleProvider from "next-plausible";
-// import { AppProps } from "next/app";
-// import Head from "next/head";
-// import "littlefoot/dist/littlefoot.css";
+import '../styles/main.css'
 
 
 export default ({ Component, pageProps }) => {
   return (
+    <>
+     <Head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="RSS"
+          href="/feed.xml"
+        />
+      </Head>
     <PlausibleProvider domain="tiffanywhite.dev">
       <Component {...pageProps} />
     </PlausibleProvider>
+    </>
     )
 };

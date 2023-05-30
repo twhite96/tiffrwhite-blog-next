@@ -1,5 +1,24 @@
+const YEAR = new Date().getFullYear();
+
 export default {
-  footer: <p>© tiff 2015 - {new Date().getFullYear()}</p>,
+  footer: (
+    <small style={{ display: 'block', marginTop: '8rem' }}>
+      <time>2015 - {YEAR}</time> © tiff.
+      <a href="/feed.xml">RSS</a>
+      <style jsx>{`
+        a {
+          float: right;
+        }
+        @media screen and (max-width: 480px) {
+          article {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+          }
+        }
+      `}</style>
+    </small>
+  ),
+
   head: ({ title, meta }) => (
     <>
       <meta name='robots' content='follow, index' />
@@ -12,7 +31,7 @@ export default {
       <meta name='twitter:title' content={meta.title} />
       <meta name='twitter:description' content={meta.description} />
       <meta name='twitter:image' content={meta.image} />
-      <link rel="favicon" href="/favicon.svg" />
+      <link rel='favicon' href='/favicon.svg' />
     </>
   ),
   readMore: "Read More →",
