@@ -85,7 +85,7 @@ li {
   font-weight: 600;
 }
 
-.prose blockquote {
+.nx-prose :where(blockquote):not(:where([class~=nx-not-prose] *)) {
   color: var(--light-text);
   margin-right: 0px;
   border-left-color: var(--quote-left-border);
