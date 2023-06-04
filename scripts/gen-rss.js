@@ -1,42 +1,49 @@
-const { promises: fs } = require('fs')
-const path = require('path')
-const RSS = require('rss')
-const matter = require('gray-matter')
+const Feed = require("feed").Feed;
 
-async function generate() {
-  const feed = new RSS({
-    title: 'Your Name',
-    site_url: 'https://yoursite.com',
-    feed_url: 'https://yoursite.com/feed.xml'
-  })
+const feed = new Feed({
+  title: "tiff's blog",
+  description: "my very opinionated thoughts on software development",
+  id: "https://tiffanywhite.dev/",
+  link: "https://tiffanywhite.dev/",
+  language: "en", // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+  image: "http://example.com/image.png",
+  favicon: "http://example.com/favicon.ico",
+  copyright: "All rights reserved 2013, John Doe",
+  updated: new Date(2013, 6, 14), // optional, default = today
+  generator: "awesome", // optional, default = 'Feed for Node.js'
+  feedLinks: {
+    json: "https://tiffanywhite.dev/json",
+    rss2: "https://tiffanywhite.dev/feed.xml",
+  },
+  author: {
+    name: "tiff",
+    email: "tiffany@tiffanywhite.dev",
+    link: "https://hachyderm.io/@tiff",
+  },
+});
 
-  const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
-  const allPosts = []
-  await Promise.all(
-    posts.map(async (name) => {
-      if (name.startsWith('index.')) return
+const posts = [];
 
-      const content = await fs.readFile(
-        path.join(__dirname, '..', 'pages', 'posts', name)
-      )
-      const frontmatter = matter(content)
+posts.forEach((post) => {
+  feed.addItem({
+    title: post.title,
+    id: post.url,
+    link: post.url,
+    description: post.description,
+    content: post.content,
+    author: "tiff",
+    date: post.date,
+    image: post.image,
+  });
+});
 
-      allPosts.push({
-        title: frontmatter.data.title,
-        url: '/posts/' + name.replace(/\.mdx?/, ''),
-        date: frontmatter.data.date,
-        description: frontmatter.data.description,
-        categories: frontmatter.data.tag.split(', '),
-        author: frontmatter.data.author
-      })
-    })
-  )
+feed.rss2();
+feed.json1();
+console.log(feed.rss2());
+// Output: RSS 2.0
 
-  allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
-  allPosts.forEach((post) => {
-      feed.item(post)
-  })
-  await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
-}
+console.log(feed.atom1());
+// Output: Atom 1.0
 
-generate()
+console.log(feed.json1());
+// Output: JSON Feed 1.0
