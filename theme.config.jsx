@@ -4,7 +4,7 @@ export default {
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
       <time>2015 - {YEAR}</time> © tiff.
-      <a href="/feed.xml">RSS</a>
+      <a href="https://tiffanywhite.dev/feed.xml">RSS</a>
       <style jsx>{`
         a {
           float: right;
