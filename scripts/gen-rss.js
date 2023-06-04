@@ -13,7 +13,7 @@ const feed = new Feed({
   generator: "awesome", // optional, default = 'Feed for Node.js'
   feedLinks: {
     json: "https://tiffanywhite.dev/json",
-    rss2: "https://tiffanywhite.dev/feed.xml",
+    rss2: "https://tiffanywhite.dev/atom",
   },
   author: {
     name: "tiff",
