@@ -1,5 +1,9 @@
-# Incredibly Not Hot Take
-
+---
+title: Incredibly Not Hot Take
+description: When the takes are cold and the debate is spicy.
+tag: notes
+date: 2023-06-04
+---
 There's nothing wrong with a UI library, and [Chakra UI](https://chakra-ui.com/) is the one.
 
 TailwindCSS is an atomic design system yada yada, ad nauseam ad infinitum. 
