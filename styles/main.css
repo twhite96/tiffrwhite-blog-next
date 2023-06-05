@@ -28,13 +28,13 @@ a:hover {
   color: var(--link-hover);
 }
 
-.nx-prose a:visited {
+/* .nx-prose a:visited {
   color: var(--link-visited);
 }
 
 a:visited {
   color: var(--link-visited);
-}
+} */
 
 
 
