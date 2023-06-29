@@ -36,11 +36,4 @@ export default {
   ),
   readMore: "Read More →",
   darkMode: true,
-  // editText: "Edit this page on GitHub",
-  navs: [
-    {
-      url: "/",
-      name: "the archives",
-    },
-  ],
 };
