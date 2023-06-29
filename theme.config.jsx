@@ -36,21 +36,5 @@ export default {
   ),
   readMore: "Read More →",
   darkMode: true,
-  search: true,
-  primaryHue: 197,
   // editText: "Edit this page on GitHub",
-  navs: [
-    {
-      url: "https://github.com/twhite96",
-      name: "GitHub",
-    },
-    {
-      url: "https://notes.tiffanywhite.dev",
-      name: "Notes",
-    },
-    {
-      url: "https://links.tiffanywhite.dev",
-      name: "My stuff",
-    },
-  ],
 };
