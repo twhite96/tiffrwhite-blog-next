@@ -163,6 +163,10 @@ img.next-image {
   color: var(--link);
 }
 
+.prose p {
+  font-size: 1.2rem;
+}
+
 .nav-line .nav-link {
   color: #69778c;
 }
