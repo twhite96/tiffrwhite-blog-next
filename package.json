@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "my open source Next.js blog",
   "scripts": {
-    "build": "node ./scripts/gen-rss.js && next build",
+    "build": "next build",
     "dev": "next dev -p 4030",
     "start": "next start -p 4040",
     "next": "next -p 4050"
