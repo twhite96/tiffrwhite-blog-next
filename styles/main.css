@@ -22,6 +22,8 @@ a:hover {
 
 .nx-prose a {
   color: var(--link);
+  font-size: 1.3rem;
+  font-variation-settings: 'wght' 700;
 }
 
 .nx-prose a:hover {
