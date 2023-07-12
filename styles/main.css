@@ -163,8 +163,8 @@ img.next-image {
   color: var(--link);
 }
 
-.prose p {
-  font-size: 1.2rem;
+.nx-prose p {
+  font-size: 1.3rem;
 }
 
 .nav-line .nav-link {
